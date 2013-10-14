@@ -53,17 +53,33 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="93H-eH-Frq" customClass="AAColorView">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMT-OW-Cow" customClass="AAGrayscaleView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fsX-sQ-Ffl" customClass="AANextColorView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="93H-eH-Frq" firstAttribute="leading" secondItem="pmL-qP-TaF" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="00w-Wg-63i"/>
+                            <constraint firstAttribute="trailing" secondItem="fsX-sQ-Ffl" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="2Qw-im-dqd"/>
+                            <constraint firstItem="SMT-OW-Cow" firstAttribute="top" secondItem="pmL-qP-TaF" secondAttribute="top" constant="131" id="6Eg-ul-HvT"/>
+                            <constraint firstItem="SMT-OW-Cow" firstAttribute="leading" secondItem="pmL-qP-TaF" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="WuG-2r-oRh"/>
+                            <constraint firstAttribute="bottom" secondItem="fsX-sQ-Ffl" secondAttribute="bottom" constant="629" id="Zql-cM-qpT"/>
                             <constraint firstItem="93H-eH-Frq" firstAttribute="top" secondItem="pmL-qP-TaF" secondAttribute="top" constant="20" symbolic="YES" type="default" id="aQJ-jw-BVq"/>
                             <constraint firstAttribute="trailing" secondItem="93H-eH-Frq" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="bf1-WP-WgO"/>
+                            <constraint firstAttribute="trailing" secondItem="SMT-OW-Cow" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="dZB-6W-T5M"/>
+                            <constraint firstAttribute="bottom" secondItem="SMT-OW-Cow" secondAttribute="bottom" constant="738" id="r8x-Sb-waO"/>
                             <constraint firstAttribute="bottom" secondItem="93H-eH-Frq" secondAttribute="bottom" constant="849" id="wZR-Sn-JYl"/>
+                            <constraint firstItem="fsX-sQ-Ffl" firstAttribute="leading" secondItem="pmL-qP-TaF" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="zgB-VO-Ajm"/>
+                            <constraint firstItem="fsX-sQ-Ffl" firstAttribute="top" secondItem="pmL-qP-TaF" secondAttribute="top" constant="240" id="zwj-3C-1id"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Colors!" id="nV9-Zv-lYf"/>
                     <connections>
+                        <outlet property="NextColorView" destination="fsX-sQ-Ffl" id="Jby-Hj-pvZ"/>
+                        <outlet property="grayscaleColorView" destination="SMT-OW-Cow" id="HQZ-Mt-9nN"/>
                         <outlet property="secondsColorView" destination="93H-eH-Frq" id="Dkk-vC-ul3"/>
                     </connections>
                 </viewController>

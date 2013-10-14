@@ -13,6 +13,8 @@
 @interface AAColorsVC ()
 @property (weak, nonatomic) IBOutlet AAColorView *secondsColorView;
 @property (strong,nonatomic) CADisplayLink *displayLink;
+@property (weak, nonatomic) IBOutlet AAColorView *grayscaleColorView;
+@property (weak, nonatomic) IBOutlet AAColorView *NextColorView;
 @end
 
 @implementation AAColorsVC
@@ -27,6 +29,8 @@
 
     CGFloat percentage = [dateComps second] / 60.0;
     [self.secondsColorView changeColorForPercentage:percentage];
+    [self.grayscaleColorView changeColorForPercentage:percentage];
+    [self.NextColorView changeColorForPercentage:percentage];
 }
 
 
